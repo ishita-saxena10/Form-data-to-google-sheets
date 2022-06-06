@@ -17,6 +17,8 @@ class Form(db.Model):
     form_category = db.Column(db.String(100),nullable=False)
     question_no = db.Column(db.Integer,nullable=False)
     answer_no = db.Column(db.Integer,nullable=False)
+    user_name = db.Column(db.String(100),nullable=False)
+    phone_number = db.Column(db.String(100))
 
 class FormResponse(db.Model):
     id = db.Column(db.Integer,primary_key=True)

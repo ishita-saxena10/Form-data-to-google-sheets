@@ -9,7 +9,9 @@ def post_data_form(data):
         data_form=Form(user_id=data["user_id"],
                     form_category=data["form_category"],
                     question_no=data["question_no"],
-                    answer_no=data["answer_no"])
+                    answer_no=data["answer_no"],
+                    user_name=data["user_name"],
+                    phone_number=data["phone_number"])
         
         #db.session object can be used to manage database changes
         db.session.add(data_form)  #this statments issues a INSERT Statement
